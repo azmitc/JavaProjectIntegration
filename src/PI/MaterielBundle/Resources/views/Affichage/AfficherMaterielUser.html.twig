@@ -1,0 +1,65 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+
+
+{% block content %}
+
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <div class="row shop_box-top">
+    {% for materiel in pagination %}
+                    <div class="col-md-3 shop_box"><a href="{{path('user_materielSingle',{'id':materiel.id})}}">
+                            <img src="{{ 'http://localhost/ImagePi/' ~ materiel.imageName}}" class="img-responsive" alt=""/>
+                            <span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+                            <div class="shop_desc">
+                                <h3><a href="#">{{ materiel.nom }}</a></h3>
+                                <p>{{ materiel.type }} </p>
+                                <span class="actual">{{ materiel.prix }} DT</span><br>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="{{ path('user_reservation',{'id':materiel.id}) }}">Reserver</a></li>
+                                    <li class="shop_btn"><a href="{{path('user_materielSingle',{'id':materiel.id})}}">Plus d'information </a></li>
+                                    <div class="clear"> </div>
+                                </ul>
+                            </div>
+                        </a></div>
+
+    {% endfor %}
+
+                </div>
+
+                </div>
+            <div class="col-xs-6">
+                <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
+                    <ul class="pagination">
+                        {{ knp_pagination_render(pagination) }}
+
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+
+{% endblock %}
+
+{% endblock %}

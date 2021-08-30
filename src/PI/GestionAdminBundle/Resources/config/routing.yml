@@ -1,0 +1,28 @@
+admin_accueil:
+    path:     /admin/Accueil
+    defaults: { _controller: PIGestionAdminBundle:Default:index }
+admin_affiche:
+    path:     /admin/AfficheAdmins
+    defaults: { _controller: PIGestionAdminBundle:Admin:afficheListe}
+Admin_supprimer:
+    path:     /admin/supprimerAdmin/{id}
+    defaults: { _controller: PIGestionAdminBundle:Admin:supprimer }
+Admin_desactiver:
+    path:     /admin/desactiverAdmin/{id}
+    defaults: { _controller: PIGestionAdminBundle:Admin:desactiver }
+Admin_activer:
+    path:     /admin/activerAdmin/{id}
+    defaults: { _controller: PIGestionAdminBundle:Admin:activer }
+admin_promote:
+    path:     /admin/promoteAdmin/{id}
+    defaults: { _controller: PIGestionAdminBundle:Admin:promote }
+Liste_tous:
+    path:     /liste/{nom}
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:afficheListeTous }
+Liste_tous1:
+    path:     /liste
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:afficheListeTous1 }
+supp_ami:
+    path:     /supp/{id}
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:supprimerAmi }
+

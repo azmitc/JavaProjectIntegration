@@ -1,0 +1,77 @@
+pi_sujet_afficher:
+    path:     /admin/afficheSuj
+    defaults: { _controller: PIForumBundle:GestionSujet:afficheSuj}
+pi_sujet_ajouter:
+    path:     /admin/ajoutSuj
+    defaults: { _controller: PIForumBundle:GestionSujet:ajoutee }
+pi_sujet_supprimer:
+    path:     /Admin/supprimerSuj/{id}
+    defaults: { _controller:  PIForumBundle:GestionSujet:supprime }
+pi_sujet_rechercher:
+    path:     /admin/recherheSuj
+    defaults: { _controller: PIForumBundle:GestionSujet:rechercher}
+pi_sujet_modifier:
+    path:     /Admin/modifierSuj/{id}
+    defaults: { _controller:  PIForumBundle:GestionSujet:modifierSuj }
+pi_sujet_desactiver:
+    path:     /Admin/desactiver/{id}
+    defaults: { _controller:  PIForumBundle:GestionSujet:desactiverSuj }
+pi_sujet_activer:
+    path:     /Admin/activer/{id}
+    defaults: { _controller:  PIForumBundle:GestionSujet:activerSuj }
+
+
+pi_commentaire_afficher:
+    path:     /admin/afficheCom
+    defaults: { _controller: PIForumBundle:GestionCommentaire:afficheCom}
+
+pi_commentaire_afficherSuj:
+    path:     /admin/afficheComSuj/{id}
+    defaults: { _controller: PIForumBundle:GestionCommentaire:afficheComSuj}
+pi_commentaire_supprimer:
+    path:     /supprimerCom/{id}
+    defaults: { _controller:  PIForumBundle:GestionCommentaire:supprimeCom }
+signal_mail:
+    path:  /admin/signalerComMail/{id}
+    defaults: { _controller: PIForumBundle:Mail:contact}
+signal_comm:
+    path: /signalerCom/{id}
+    defaults: { _controller: PIForumBundle:GestionCommentaire:SignaleCom}
+signal_comm_Mail:
+    path:  /admin/signalerCom/{id}
+    defaults: { _controller: PIForumBundle:GestionCommentaire:SignaleComMail}
+
+
+pi_sujet_ajoute_front:
+    path:     /AjoutSujFront
+    defaults: { _controller:  PIForumBundle:GestionSujet:AjouteSujetFront }
+pi_sujet_affiche_front:
+    path:     /afficheSujFront
+    defaults: { _controller:  PIForumBundle:GestionSujet:afficheSujFront }
+pi_sujet1Com_affiche_front:
+    path: /afficheSuj3/{id}
+    defaults: { _controller: PIForumBundle:GestionCommentaire:ajoutCom}
+
+pi_commentaire_afficherSujFront:
+    path:     /admin/afficheComSujFront/{id}
+    defaults: { _controller: PIForumBundle:GestionCommentaire:afficheComSujFront}
+
+pi_commentaireFront_supprimer:
+    path:     /supprimerComFront/{id}
+    defaults: { _controller:  PIForumBundle:GestionCommentaire:supprimeFrontCom }
+
+pi_disc:
+    path:     /disc
+    defaults: { _controller:  PIForumBundle:GestionCommentaire:afficheDisc }
+
+pi_note_ajouter:
+    path:     /ajouteNote/{id}
+    defaults: { _controller: PIForumBundle:GestionNote:Noter }
+
+
+Recherche_Suj:
+    path:     /RechercheSuj
+    defaults: { _controller: PIForumBundle:GestionSujet:Recherche }
+Recherche_Com:
+    path:     /RechercheCom
+    defaults: { _controller: PIForumBundle:GestionCommentaire:Recherche }

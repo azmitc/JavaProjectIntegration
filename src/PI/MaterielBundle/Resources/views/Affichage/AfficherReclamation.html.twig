@@ -1,0 +1,100 @@
+{% extends "PIBaseBundle::layoutadmin.html.twig" %}
+{% block content %}
+    <form id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
+    <div >
+
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">Liste des  Réclamations</h4>
+
+                </div>
+            </div>
+
+
+    <div class="row">
+    <div class="col-md-12">
+
+
+
+    <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+        <tr role="row"><th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Nom materiel</th>
+            <th class="hidden-480 sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Utilisateur</th>
+            <th class="hidden-480 sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Date achat</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Date Envoie</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Type</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Description</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Etat</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Repondre</th>
+            <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1">Genereation Pdf</th>
+
+
+        </tr>
+        </thead>
+
+    <tbody>
+
+    {% for reclamations in pagination %}
+
+
+
+        <tr role="row" class="odd">
+
+            <td>{{ reclamations.refmateriel.nom}} </td>
+            <td>{{ reclamations.idclient.username}}</td>
+
+        <td>{{ reclamations.dateAchat|date}} </td>
+        <td>{{ reclamations.dateEnvoi|date}} </td>
+        <td>{{ reclamations.typereclamation}}</td>
+            <td>{{ reclamations.description}} </td>
+
+            {% if(reclamations.etatReclamation == "en cours" )%}
+                <td><h4 class="label label-danger arrowed-in"> {{ reclamations.etatReclamation}}</h4></td>
+            {% endif %}
+            {% if(reclamations.etatReclamation == "traité" )%}
+                <td><h4 class="label label-success arrowed"> {{ reclamations.etatReclamation}}</h4></td >
+            {% endif %}
+
+
+       <td><a href="{{ path('admin_reclamationTraiter',{'id':reclamations.id}) }}" class="btn btn-success">Envoyer une reponse</a></td>
+       <td><a href="{{ path('Pdf',{'id':reclamations.id}) }}" class="btn btn-success">Generer</a></td>
+
+
+
+
+        <td>
+
+
+            <div>
+                <a class="red " href="{{path('admin_reclamationSupprimer',{'id':reclamations.id})}}" onclick="return confirm('Vous etes sure de vouloir supprimer ?')">
+
+
+
+                    <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                </a>
+            </div>
+
+
+
+        </td>
+
+
+
+            {% endfor %}
+        </tr></tbody>
+    </table>
+    <div class="col-xs-6">
+        <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
+            <ul class="pagination">
+                {{ knp_pagination_render(pagination) }}
+
+            </ul>
+        </div>
+    </div>
+<h3>   <a href="{{ path('graphePie') }}" class="glyphicon glyphicon-stats" title="">Statistique de traitement</a></h3>
+
+{% endblock %}

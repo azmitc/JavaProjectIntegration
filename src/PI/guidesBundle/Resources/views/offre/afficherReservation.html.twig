@@ -1,0 +1,98 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+    {% block content %}
+ {% for flashMessage in app.session.flashbag.get('notice') %}
+
+     <div class="alert alert-success">
+         {{ flashMessage }}
+     </div>
+
+ {% endfor %}
+        <h4 class="page-head-line">Vos Reservations</h4>
+
+        <div class="row">
+        <div class="col-md-12">
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                <tr>
+
+                    <th>Randonneur</th>
+                    <th>Lieu Randonnée</th>
+                    <th>nombredeplace</th>
+                    <th>datesres</th>
+                    <th>prix</th>
+                    <th>total</th>
+
+
+
+
+
+
+                </tr>
+                </thead>
+                <tbody>
+
+
+                {% for offre in pagination %}
+                    <tr>
+
+
+                        <td>
+
+                            {{ offre.idUser }}
+                        </td>
+
+                        <td>
+
+                            {{ offre.idRondonne.getLieu()}}
+                        </td>
+                        <td>
+                            {{ offre.nombreplace}}
+                        </td>
+                        <td>
+                            {{ offre.dateres|date('Y-m-d')}}
+                        </td>
+                        <td>
+                            {{ offre.prix}}
+                        </td>
+
+                        <td>
+                            {{ offre.total}}
+                        </td>
+                        <td>
+                            <a href="{{ path('esprit_parc_supp',{'id':offre.id}) }}" class="btn btn-xs btn-danger"> <i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                <td href="{{ path('Pdf',{'id':offre.id }) }}"n class="btn btn-xs btn-danger"><i class="ace-icon fa fa-pencil bigger-120"></i>
+                                </td>
+
+
+                    </tr>
+                {% endfor %}
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        {{ knp_pagination_render(pagination) }}
+
+
+
+
+    {% endblock %}
+
+{% block testimonails %}
+
+            {% endblock %}

@@ -1,0 +1,151 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block head %}
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    {{ parent() }}
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{{ asset('assets2/animate/animate.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets2/animate/set.css')}}" />
+
+    <!------------------------------------------------------------------>
+    <!----details-product-slider--->
+    <!-- Include the Etalage files -->
+    <link rel="stylesheet" href="{{asset('css/etalage.css')}}">
+    <script src="{{asset('js/jquery.etalage.min.js')}}"></script>
+    <!-- Include the Etalage files -->
+    <script>
+        jQuery(document).ready(function($){
+
+            $('#etalage').etalage({
+                thumb_image_width: 335,
+                thumb_image_height: 400,
+
+                show_hint: true,
+                click_callback: function(image_anchor, instance_id){
+                    alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+                }
+            });
+            // This is for the dropdown list example:
+            $('.dropdownlist').change(function(){
+                etalage_show( $(this).find('option:selected').attr('class') );
+            });
+
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+
+    {% endblock %}
+    {% block content %}
+        {{ parent() }}
+        <!--------------------------------------------------->
+        <div id="home">
+            <!-- Slider Starts -->
+            <center>
+                <div class="banner">
+                    <div class="caption">
+                        <div class="caption-wrapper">
+                            <div class="caption-info">
+                                <img src="{{ 'http://localhost/Image/' ~app.user.getImageName()}}" class="img-circle profile">
+                                <h1 class="animated bounceInUp">Votre réclamation est traitée </h1>
+                                <h3 class="animated bounceInLeft">Randonni est à votre écoute </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- #Slider Ends -->
+
+        </div>
+        <!--------------------------------------------------------->
+
+        <div class="main">
+
+            <div class="content-top">
+                <div class="shop_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 single_left">
+                                <div class="single_image">
+                                    <ul id="etalage">
+                                        <li>
+                                            <a href="optionallink.html">
+                                                <img class="etalage_thumb_image" src="{{asset('http://localhost/Image/' ~ Reclamation.Randonnee.getImage())}}" />
+                                                <img class="etalage_source_image" src="{{asset('http://localhost/Image/' ~ Reclamation.Randonnee.getImage())}}" />
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <!-- end product_slider -->
+                                <div class="single_right">
+
+                                    <h3>{{Reclamation.type}} </h3>
+                                    <br>
+                                    <p class="m_10">Organisé a : {{Reclamation.Randonnee.circuit}}</p>
+                                    <p class="m_10" data-lieu="{{ Reclamation.Randonnee.getLieu() }}" id="lieu" > Lieu : <br> {{Reclamation.Randonnee.getLieu()}} </p>
+
+                                    <center><img src="{{asset('images/wish.png')}}" alt=""><a href="#"></a></center>
+                                    <center>
+
+
+                                        <br>
+                                        <br>
+                                        <h6>Téléphone :{{Reclamation.Randonneur.getNumTel()}}</h6>
+                                        <h6>Mail :{{Reclamation.Randonneur.email}}</h6>
+                                        <br>
+
+                                    </center>
+
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <br><br><br>
+                            <div class="col-md-3">
+                                <div class="box-info-product">
+                                    <h3>Date d'envoi</h3>
+                                    <br>
+
+                                    <h2>{{Reclamation.dateEnvoi|date('d/m/y H:i:s')}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>Description</h4>
+                            <p>{{Reclamation.description}}</p>
+                            <br>
+                            <h3>Catégorie :{{Reclamation.type}}</h3>
+<br>
+                            <h4>Reponse de l'admin "{{ Reclamation.AdminTraiteur.username }}" </h4>
+                            <p>{{ Reclamation.reponse }}</p>
+                            <br> <p>Pour plus d'informations vous pouvez nous envoyer un
+                                <a href="{{ path('app_mail_homepage')}}">
+                                    <i class="ace-icon fa fa-envelope bigger-120 pink"></i>
+                                    Mail
+                                </a></p>
+                        </div>
+                        <center>
+                            <a href="javascript:window.print()" class="btn btn-info btn-sm">
+                                <img  src="{{asset('images/glyphicons-16-print.png')}}" > Imprimer
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+
+
+            </div>
+
+
+        </div>
+
+    {% endblock %}
+
+
+{% endblock %}

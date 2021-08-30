@@ -1,0 +1,38 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block content %}
+    <h3>Randonnées </h3><br><br><br>
+
+    <div class="main">
+        <div class="shop_top">
+
+
+            <div class="container">
+
+
+                <div class="row shop_box-top">
+                    {% for cr in crandonnee %}
+                        <div class="col-md-3 shop_box"> <a href="{{ path('affiche', { 'id': cr.id }) }}">
+                                <img src="{{ 'http://localhost/ImagePi/' ~ cr.imageName}}" class="img-responsive" alt=""/>
+                            </a>
+
+                                    <div class="shop_desc">
+                                        <h3>{{ cr.nom }}</h3>
+                                        <p>{{ cr.description }} </p>
+
+                                    </div>
+
+
+
+
+                            </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

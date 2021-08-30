@@ -1,0 +1,32 @@
+{% extends "@FOSUser/layout.html.twig" %}
+{% block banner %}
+
+{% endblock %}
+  {% block login %}
+          <link rel="stylesheet" href="{{ asset('css/stylelogin.css')}}">
+
+          <div class="wrapper" style="height:1280px">
+
+              <div class="containerlogin">
+
+                  <ul class="bg-bubbles">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                  </ul>
+              </div>
+          </div>
+          <script src="{{ asset('js/jquery.min.js')}}"></script>
+
+          <script src="{{ asset('js/indexlogin.js')}}"></script>
+{% block fos_user_content %}
+{% include "@FOSUser/Registration/register_content.html.twig" %}
+{% endblock fos_user_content %}
+  {%endblock%}

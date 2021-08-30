@@ -1,0 +1,9 @@
+{% extends "PIBaseBundle::layoutadmin.html.twig" %}
+{% block content %}
+    <h1>Formulaire d'ajout  des reservation</h1>
+    {{ form(form) }}
+
+    <input type="submit" value="Ajouter">
+    {{ form_errors(form) }}
+
+{% endblock %}

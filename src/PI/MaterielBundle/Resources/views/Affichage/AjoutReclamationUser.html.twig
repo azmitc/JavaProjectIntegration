@@ -1,0 +1,40 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+<div class="main">
+
+    <div class="shop_top">
+
+    <div class="container">
+            <div class="row">
+    <h4>Remplir ce formulaire ou envoyer <a href="{{ path('my_app_mail_homepage')}}">un mail</a></h4>
+
+
+    {% block content %}
+        {{ form(form) }}
+        {{ form_errors(form) }}
+            </div>
+        <div class="panel-footer text-muted">
+            <strong>Note : </strong>Un Administrateur vous répondra dans les plus brefs délais.
+        </div>
+        </div>
+    </div>
+        </div>
+        {% block footer %}
+            {{ parent() }}
+        {% endblock %}
+
+
+    {% endblock %}
+
+{% endblock %}

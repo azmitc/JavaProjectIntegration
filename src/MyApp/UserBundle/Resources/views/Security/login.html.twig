@@ -1,0 +1,121 @@
+{#
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block fos_user_content %}
+    {{ include('@FOSUser/Security/login_content.html.twig') }}
+{% endblock fos_user_content %}
+#}
+{% extends "MyAppUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+{% block head %}
+    {{ parent() }}
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Google fonts -->
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700')}}' rel='stylesheet' type='text/css'>
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Josefin+Sans:600')}}' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!-- bootstrap --
+<link rel="stylesheet" href="{{ asset('assets2/bootstrap/css/bootstrap.min.css')}}" />
+
+<!-- animate.css -->
+    <link rel="stylesheet" href="{{ asset('assets2/animate/animate.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets2/animate/set.css')}}" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="{{ asset('assets2/gallery/blueimp-gallery.min.css')}}">
+
+
+    <link rel="stylesheet" href="{{ asset('assets2/style.css')}}">
+{% endblock %}
+
+
+{% block fos_user_content %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
+
+
+        <center>  <h1>Connectez-vous</h1>
+
+            <a href="{{ path('fos_user_registration_register') }}">Ou créez un compte</a>
+            <br>
+            <a href="#"><img src="{{asset('images/logo.png')}}" alt=""/></a>
+        </center>
+        <br>
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+        <!--<label for="username">{{ 'security.login.username'|trans }}</label>-->
+        <input type="text" placeholder="Nom d'utilisateur" id="username" name="_username" value="{{ last_username }}" required="required" />
+
+        <!-- <label for="password">{{ 'security.login.password'|trans }}</label>-->
+        <input type="password" placeholder="Mot de passe" id="password" name="_password" required="required" />
+        <br>
+        <center>
+            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+
+        </center>
+
+        <input type="submit" class="btn-info" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                // init the FB JS SDK
+                FB.init({
+                    appId      : '1512795938765767',                        // App ID from the app dashboard
+                    channelUrl : 'http://localhost/PI_WEB-v1/web/app_dev.php/',      // Channel file for x-domain comms
+                    status     : true,                                 // Check Facebook Login status
+                    xfbml      : true                                  // Look for social plugins on the page
+                });
+            };
+
+            // Load the SDK asynchronously
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            function fb_login() {
+                FB.getLoginStatus(function(response) {
+                    if (response.status === 'connected') {
+                        // connected
+                        alert('Already connected, redirect to login page to create token.');
+                        document.location = "{{ url("hwi_oauth_service_redirect", {service: "facebook"}) }}";
+                    } else {
+                        // not_authorized
+                        FB.login(function(response) {
+                            if (response.authResponse) {
+                                document.location = "{{ url("hwi_oauth_service_redirect", {service: "facebook"}) }}";
+                            } else {
+                                alert('Cancelled.');
+                            }
+                        }, {scope: 'email'});
+                    }
+                });
+            }
+        </script>
+<br>
+        <br>
+
+        <p>
+            <a href="{{ path('hwi_oauth_service_redirect', {'service': 'facebook' }) }}" onclick="fb_login();">Facebook Connect Button </a>
+        </p>
+
+        {# Bonus: Show all available login link in HWIOAuthBundle #}
+       {# {% render(controller('HWIOAuthBundle:Connect:connect')) %} #}
+    </form>
+
+{% endblock fos_user_content %}

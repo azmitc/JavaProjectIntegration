@@ -1,0 +1,26 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+    <h3>Liste Randonnées </h3><br><br><br>
+
+    {% for r in randonnee %}
+
+        <fieldset >
+
+            <legend> {{ r.lieu }} </legend>
+
+
+            <div align="center"> Date :   {{ r.dateDebut|date('Y-m-d') }} à {{ r.heureDepart|date('h') }}h - {{ r.dateFin|date('Y-m-d') }} à {{ r.heureRetour|date('h') }}h<br>
+                {{ r.description }}
+            </div>
+
+            <a href="">Annuler</a> <a href="">Modifier</a>
+
+
+
+        </fieldset>
+    {% endfor %}
+
+
+
+{% endblock %}

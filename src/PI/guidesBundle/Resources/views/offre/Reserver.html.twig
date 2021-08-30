@@ -1,0 +1,270 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col-xs-12">
+            <table id="simple-table" class="table  table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th class="center">
+                        <label class="pos-rel">
+                            <input type="checkbox" class="ace">
+                            <span class="lbl"></span>
+                        </label>
+                    </th>
+                    <th class="sorting_asc" tabindex="0" aria-controls="simple-table" rowspan="1" colspan="1"
+                        aria-label="Domain: activate to sort column descending" aria-sort="ascending">Capacite</th>
+
+                    <th>Nombredejour</th>
+                    <th>nombredeplace</th>
+                    <th>datesres</th>
+                    <th>prix</th>
+                    <th>remise</th>
+                    <th>total</th>
+                    <th>Details</th>
+
+
+                    <th class="detail-col"></th>
+                    <th></th>
+                </tr>
+                </thead>
+                {% for offre in pagination %}
+                    <tbody>
+
+                    <div title="" style="float: left; cursor: pointer; display: block;" class="ui-pg-div ui-inline-edit" id="jEditButton_6"
+                         onclick="jQuery.fn.fmatter.rowactions.call(this,'edit');" onmouseover="jQuery(this).addClass('ui-state-hover');"
+                         onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="Edit selected row"><span class="ui-icon ui-icon-pencil"></span></div>
+
+
+
+                    <tr>
+
+                        <td class="center">
+                            <label class="pos-rel">
+                                <input type="checkbox" class="ace">
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+                        <td>
+
+                            {{ offre.capacite}}
+                        </td>
+                        <td>
+                            {{ offre.nbredejour}}
+                        </td>
+                        <td class="hidden-480">
+                            <span class="label label-sm label-warning">   {{ offre.nombreplace}}</span>
+                        </td>
+                        <td>
+                            {{ offre.dateres|date}}
+                        </td>
+                        <td>
+                            {{ offre.prix}}
+                        </td>
+                        <td>
+                            {{ offre.remise}}
+                        </td>
+                        <td>
+                            {{ offre.total}}
+                        </td>
+
+                        {{ socialButtons() }}
+
+
+                        <td class="center">
+                            <div class="action-buttons">
+                                <a href="#" class="green bigger-140 show-details-btn" title="Show Details">
+                                    <i class="ace-icon fa fa-angle-double-down"></i>
+                                    <span class="sr-only">Details</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="{{ path('esprit_parc_supp',{'id':offre.id}) }}" class="btn btn-xs btn-danger"> <i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                            <a href="{{ path('esprit_parc_modif',{'id':offre.id }) }}"n class="btn btn-xs btn-info"><i class="ace-icon fa fa-pencil bigger-120"></i>
+                                <a href="{{ path('Pdf',{'id':offre.id }) }}"n class="btn btn-xs btn-danger"><i class="ace-icon fa fa-pencil bigger-120"></i>
+                                    <a href=""n class="btn btn-xs btn-info"><i class="ace-icon fa fa-pencil bigger-120"></i>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="8ED7VTYXGQBGE">
+                                            <table>
+                                                <tr><td><input type="hidden" name="on0" value="reserver">reserver</td></tr><tr><td><select name="os0">
+                                                            <option value="Option 1">prixx{{ offre.prix}} €10,00 EUR</option>
+                                                            <option value="Option 2">prixx{{ offre.prix}} €20,00 EUR</option>
+                                                            <option value="Option 3">prixx{{ offre.prix}} €30,00 EUR</option>
+                                                        </select> </td></tr>
+                                            </table>
+                                            <input type="hidden" name="currency_code" value="EUR">
+                                            <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
+                        </td>
+
+                    </tr>
+                    <tr class="detail-row">
+                        <td colspan="8">
+                            <div class="table-detail">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="text-center">
+                                            <br>
+                                            <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+                                                <div class="inline position-relative">
+                                                    <a class="user-title-label" href="#">
+                                                        <i class="ace-icon fa fa-circle light-green"></i>
+                                                        &nbsp;
+                                                        <span class="white"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-7">
+                                        <div class="space visible-xs"></div>
+
+                                        <div class="profile-user-info profile-user-info-striped">
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> </div>
+
+                                                <div class="profile-info-value">
+                                                    <span></span>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Role </div>
+
+                                                <div class="profile-info-value">
+                                                    <i class="fa fa-map-marker light-orange bigger-110"></i>
+                                                    <span>{{ offre.idUser}}</span>
+                                                    <span>{{ offre.role}}</span>
+
+                                                </div>
+
+                                                <div class="profile-info-row">
+                                                    <div class="profile-info-name"> type de randonne </div>
+                                                    <span>{{ offre.idrondonne}}</span>
+                                                    <span>{{ offre.typerondonne}}</span>
+
+                                                    <div class="profile-info-row">
+                                                        <div class="profile-info-name"> Date de reservation</div>
+
+                                                        <div class="profile-info-value">
+                                                            <span>{{ offre.dateres|date}}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="profile-info-row">
+                                                        <div class="profile-info-name"> nombre deplaces </div>
+
+                                                        <div class="profile-info-value">
+                                                            <span>{{ offre.nbredejour}}</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                        </td>
+                    </tr>
+
+                    </tbody> {% endfor %}
+            </table>
+
+        </div><!-- /.span -->
+    </div>
+    <div class="navigation"> {{ knp_pagination_render(pagination) }} </div>
+    <head>
+        <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+
+        <script type="text/javascript">
+            function imprimer_page(){
+                window.print();
+            }
+        </script>
+    </head>
+
+    <form>
+        <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer cette page" />
+    </form>
+
+    <script src="{{ asset('assets/js/jquery-2.1.4.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery-1.11.3.min.js')}}"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        if('ontouchstart' in document.documentElement) document.write("<script src='{{ asset('assets/js/jquery.mobile.custom.min.js')}}'>"+"<"+"/script>");
+    </script>
+    <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{ asset('assets/js/buttons.flash.min.js')}}"></script>
+    <script src="{{ asset('assets/js/buttons.html5.min.js')}}"></script>
+    <script src="{{ asset('assets/js/buttons.print.min.js')}}"></script>
+    <script src="{{ asset('assets/js/buttons.colVis.min.js')}}"></script>
+    <script src="{{ asset('assets/js/dataTables.select.min.js')}}"></script>
+
+    <script src="{{ asset('assets/js/ace-elements.min.js')}}"></script>
+    <script src="{{ asset('assets/js/ace.min.js')}}"></script>
+
+
+
+    <script type="text/javascript">
+
+        jQuery(function($) {
+
+            //And for the first simple table, which doesn't have TableTools or dataTables
+            //select/deselect all rows according to table header checkbox
+            var active_class = 'active';
+            $('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function(){
+                var th_checked = this.checked;//checkbox inside "TH" table header
+
+                $(this).closest('table').find('tbody > tr').each(function(){
+                    var row = this;
+                    if(th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
+                    else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
+                });
+            });
+
+            //select/deselect a row when the checkbox is checked/unchecked
+            $('#simple-table').on('click', 'td input[type=checkbox]' , function(){
+                var $row = $(this).closest('tr');
+                if($row.is('.detail-row ')) return;
+                if(this.checked) $row.addClass(active_class);
+                else $row.removeClass(active_class);
+            });
+
+            //add tooltip for small view action buttons in dropdown menu
+            $('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+
+            //tooltip placement on right or left
+            function tooltip_placement(context, source) {
+                var $source = $(source);
+                var $parent = $source.closest('table')
+                var off1 = $parent.offset();
+                var w1 = $parent.width();
+
+                var off2 = $source.offset();
+                //var w2 = $source.width();
+
+                if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+                return 'left';
+            }
+            $('.show-details-btn').on('click', function(e) {
+                e.preventDefault();
+                $(this).closest('tr').next().toggleClass('open');
+                $(this).find(ace.vars['.icon']).toggleClass('fa-angle-double-down').toggleClass('fa-angle-double-up');
+            });
+
+
+
+        });
+    </script>
+
+
+{% endblock %}

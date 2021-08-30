@@ -1,0 +1,54 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block head %}
+{{ parent() }}
+<!-- animate.css -->
+<link rel="stylesheet" href="{{ asset('assets2/animate/animate.css')}}" />
+<link rel="stylesheet" href="{{ asset('assets2/animate/set.css')}}" />
+
+{% endblock %}
+{% block banner %}
+{% endblock %}
+{% block content %}
+    <div class="content-wrapper">
+        <!--------------------------------------------------->
+        <div id="home">
+            <!-- Slider Starts -->
+            <center>
+                <div class="banner">
+                    <div class="caption">
+                        <div class="caption-wrapper">
+                            <div class="caption-info">
+                                <img src="{{ 'http://localhost/Image/' ~app.user.getImageName()}}" class="img-circle profile">
+                                <h1 class="animated bounceInUp">Oui {{ app.user.username }} ? </h1>
+                                <h3 class="animated bounceInLeft">Randonni est à votre écoute </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- #Slider Ends -->
+
+        </div>
+        <!--------------------------------------------------------->
+        <div class="container">
+
+            <div class="col-md-12">
+
+
+
+                <div class="row">
+                    {{ form(form) }}
+                    {{ form_errors(form) }}
+                </div>
+            </div>
+
+            <div class="panel-footer text-muted">
+                <strong>Note : </strong>Un Administrateur vous répondra dans les plus brefs délais.
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+{% block testimonails %}
+{%  endblock %}

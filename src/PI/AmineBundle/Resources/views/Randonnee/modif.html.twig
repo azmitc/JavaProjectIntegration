@@ -1,0 +1,37 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+    {% block content %}
+        <style>
+
+            fieldset { border:1px solid green }
+
+            legend {
+                padding: 0.2em 0.5em;
+                border:1px solid green;
+                color:green;
+                font-size:110%;
+                text-align:center;
+            }
+        </style>
+
+        <fieldset>
+            <legend align="center">Modifier une Randonnée</legend>
+            <div style="margin-left:500px;" class="col-xs-3" align="center">
+                {{ form(form) }}
+                {{ form_errors(form) }}
+            </div>
+        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}

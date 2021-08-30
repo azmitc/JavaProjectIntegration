@@ -1,0 +1,27 @@
+reclamationRand_affiche:
+    path:     /admin/AfficheReclamRando
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:afficheListe}
+reclamationRand_traiter:
+    path:     /admin/TraiterReclamRando/{id}
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:traiterRec}
+reclamationRand_afficheUser:
+    path:     /user/AfficheReclamRando
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:afficherRecUser}
+reclamationRand_ajoutUser:
+    path:     /user/AjoutReclamRando
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:ajouter}
+reclamationRand_supprimer:
+    path:     /user/supprimerReclamRando/{id}
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:SupprimerRec}
+reclamationRand_modifier:
+    path:     /user/modifierReclamRando/{id}
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:ModifierRec}
+reclamationRand_details:
+    path:     /user/detailsReclamRando/{id}
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:detailRec}
+Pdf_rando:
+    path:    /user/pdf/{idDemande}
+    defaults: { _controller: PIReclamationBundle:ReclamationRandonnee:pdf }
+Pie_reclamationRand:
+    path:    /admin/PiereclamationRand
+    defaults: { _controller: PIReclamationBundle:Graphe:chartPie }

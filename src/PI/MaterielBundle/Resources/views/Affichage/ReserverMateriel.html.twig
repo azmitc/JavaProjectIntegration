@@ -1,0 +1,40 @@
+
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+    <div class="main">
+
+    <div class="shop_top">
+
+    <div class="container">
+    <div class="row">
+    <h4>Confirmer votre reservation</h4>
+
+
+    {% block content %}
+        {{ form(form) }}
+        {{ form_errors(form) }}
+        </div>
+        </div>
+        </div>
+        </div>
+        {% block footer %}
+            {{ parent() }}
+        {% endblock %}
+
+
+    {% endblock %}
+
+{% endblock %}
+
+

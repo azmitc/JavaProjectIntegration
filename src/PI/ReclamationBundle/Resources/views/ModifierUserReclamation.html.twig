@@ -1,0 +1,28 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="content-wrapper">
+
+        <div class="container">
+
+            <div class="col-md-12">
+                <h4 class="page-head-line">Réctifier votre réclamation</h4>
+
+
+
+                <div class="row">
+                    {{ form(form) }}
+                    {{ form_errors(form) }}
+                </div>
+            </div>
+
+            <div class="panel-footer text-muted">
+                <strong>Note : </strong>Un Administrateur vous répondra dans les plus brefs délais.
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+{% block testimonails %}
+{%  endblock %}

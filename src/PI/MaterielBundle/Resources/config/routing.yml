@@ -1,0 +1,101 @@
+admin_materiel:
+    path:     /admin/afficheMateriel
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:afficher}
+
+admin_materielSupprimer:
+    path:     /admin/supprimerMateriel/{reference}
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:Supprime }
+
+
+admin_materielModifier:
+    path:     /admin/modifierMateriel/{reference}
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:Update }
+
+admin_materielAjouter:
+    path:     /admin/ajouterMateriel
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:Ajout }
+
+admin_materielRech:
+    path:     /admin/rechMateriel
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:Rechercher}
+
+user_materielRech:
+    path:     /RechercheAlerte
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:RechercheUser }
+
+
+user_materiel:
+    path:     /afficheMateriel
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:afficherUser}
+
+user_materielSingle:
+    path:     /afficheMaterielSing/{id}
+    defaults: { _controller: PIMaterielBundle:GestionMateriel:afficherUserSingle}
+
+
+admin_reclamation:
+    path:     /admin/afficheRec
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:afficher}
+
+admin_reclamationSupprimer:
+    path:     /admin/supprimerRec/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:Supprime }
+
+admin_reclamationTraiter:
+    path:     /admin/traiterRec/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:traiterRec}
+
+user_reclamationAjouter:
+    path:     /user/ajouterRec
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:ajoutClien}
+
+
+user_reclamationAffiche:
+    path:     /user/afficherRec
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:afficherUser}
+
+user_reclamationModif:
+    path:     /user/modifierRec/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:ModifierUser}
+
+
+user_reclamationAffichRest:
+    path:     /user/afficherRecResultat/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:afficherUserRest}
+
+
+graphePie:
+      path:     /admin/pie
+      defaults: { _controller:   PIMaterielBundle:GestionReclamation:chartPie}
+
+admin_reservation:
+    path:     /admin/afficheRes
+    defaults: { _controller: PIMaterielBundle:GestionReservation:afficherAdmin}
+
+
+user_reservationSupprimer:
+    path:     /user/afficherResv/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReservation:SupprimeUser}
+
+user_reservation:
+     path:    /user/reserver/{id}
+     defaults: { _controller:   PIMaterielBundle:GestionReservation:achete }
+
+
+user_reservationAffichage:
+     path:    /user/afficherResv
+     defaults: { _controller:   PIMaterielBundle:GestionReservation:afficherUserResv }
+
+
+Pdf:
+    path:     /pdf/{id}
+    defaults: { _controller: PIMaterielBundle:GestionReclamation:pdf}
+
+my_app_mail_homepage:
+ path: /user/ajouterRec/rec
+ defaults: { _controller: PIMaterielBundle:Mail:contact}
+
+
+
+
+

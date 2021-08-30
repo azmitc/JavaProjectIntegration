@@ -1,0 +1,4 @@
+services:
+#    pi_materiel.example:
+#        class: PI\MaterielBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

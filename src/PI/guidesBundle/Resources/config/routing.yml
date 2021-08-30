@@ -1,0 +1,36 @@
+esprit_parc_ajout:
+    path:     /user/reservation/{id}
+    defaults: { _controller: PIguidesBundle:Reservation:ResRand}
+esprit_parc_supp:
+    path:     /supp/{id}
+    defaults: { _controller: PIguidesBundle:Reservation:supp}
+esprit_parc_modif:
+    path:     /modif/{id}
+    defaults: { _controller: PIguidesBundle:Reservation:update}
+esprit_parc_aff1:
+    path:     /user/aff1
+    defaults: { _controller: PIguidesBundle:Reservation:list}
+esprit_parc_affrando:
+    path:     /affrando
+    defaults: { _controller: PIguidesBundle:Randonnii:afficher}
+esprit_parc_aff:
+    path:     /admin/aff
+    defaults: { _controller: PIguidesBundle:Guide:afficher}
+esprit_parc_indispo:
+    path:     /indispo/{id}
+    defaults: { _controller: PIguidesBundle:Guide:indisponible}
+esprit_parc_dispo:
+    path:     /dispo/{id}
+    defaults: { _controller: PIguidesBundle:Guide:disponible}
+my_app_mail_homepage:
+ path: /user/signaler
+ defaults: { _controller: PIguidesBundle:Mail:contact}
+esprit_parc_afforg:
+    path:     /admin/afforg
+    defaults: { _controller: PIguidesBundle:Organisateur:afficher}
+Pdf:
+    path:     /pdf/{id}
+    defaults: { _controller: PIguidesBundle:Reservation:pdf}
+esprit_parc_aff2:
+    path:     /reserver
+    defaults: { _controller: PIguidesBundle:Reservation:list1}

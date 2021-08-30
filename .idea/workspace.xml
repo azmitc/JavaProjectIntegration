@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aad39289-f700-47cc-ac9b-13253430cffe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reclamation.php" afterPath="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reclamation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reservationr.php" afterPath="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reservationr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Profile/show_content.html.twig" afterPath="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Profile/show_content.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/aff.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/aff.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/afficherandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/afficherandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/Randonneur/Raffichecat.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/Randonneur/Raffichecat.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/affichecatorg.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/affichecatorg.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Allrando.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Allrando.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/Recherche.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/Recherche.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/afficherandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/afficherandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/detailrandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/detailrandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/afficherandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/afficherandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/detailrandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/detailrandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilorg.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilorg.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilrand.html.twig" afterPath="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilrand.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layoutadmin.html.twig" afterPath="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layoutadmin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetComFront.html.twig" afterPath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetComFront.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetFront.html.twig" afterPath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetFront.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/RechercheSujet.html.twig" afterPath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/RechercheSujet.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/SujetView/AfficheSujet.html.twig" afterPath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/SujetView/AfficheSujet.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/rando/detailrandonnee.html.twig" afterPath="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/rando/detailrandonnee.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/GestionAdminBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PI/GestionAdminBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Controller/RandonneurController.php" afterPath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Controller/RandonneurController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Resources/views/afficherRandonneur.html.twig" afterPath="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Resources/views/afficherRandonneur.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/MaterielBundle/Controller/MailController.php" afterPath="$PROJECT_DIR$/src/PI/MaterielBundle/Controller/MailController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMateriel.html.twig" afterPath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMateriel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUser.html.twig" afterPath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUser.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUserSingle.html.twig" afterPath="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUserSingle.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/AfficherUserReclamtion.html.twig" afterPath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/AfficherUserReclamtion.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/afficherReclamation.html.twig" afterPath="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/afficherReclamation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/guidesBundle/Controller/ReservationController.php" afterPath="$PROJECT_DIR$/src/PI/guidesBundle/Controller/ReservationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/guidesBundle/Form/AjoutReser.php" afterPath="$PROJECT_DIR$/src/PI/guidesBundle/Form/AjoutReser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/guidesBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PI/guidesBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherReservation.html.twig" afterPath="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherReservation.html.twig" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>C:\wamp\www\PI_WEB-v1\composer.phar</pharPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="PI_WEB-v1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="afficherandonnee.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/afficherandonnee.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailrandonnee.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/detailrandonnee.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3145">
+              <caret line="185" column="17" lean-forward="false" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="City.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Entity/City.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2584">
+              <caret line="152" column="87" lean-forward="false" selection-start-line="152" selection-start-column="87" selection-end-line="152" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layoutadmin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layoutadmin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5780">
+              <caret line="343" column="48" lean-forward="false" selection-start-line="343" selection-start-column="48" selection-end-line="343" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AfficherUserReclamtion.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/AfficherUserReclamtion.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1785">
+              <caret line="105" column="49" lean-forward="false" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="afficherAdmin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/GestionAdminBundle/Resources/views/afficherAdmin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2329">
+              <caret line="137" column="155" lean-forward="false" selection-start-line="137" selection-start-column="150" selection-end-line="137" selection-end-column="155" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="afficherReclamation.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/afficherReclamation.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1683">
+              <caret line="99" column="21" lean-forward="false" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>affiche</find>
+      <find>produc</find>
+      <find>Rafficher</find>
+      <find>manyto</find>
+      <find>produ</find>
+      <find>nom</find>
+      <find>google</find>
+      <find>piano</find>
+      <find>admin</find>
+      <find>476</find>
+      <find>randonneur</find>
+      <find>afficher</find>
+      <find>rde</find>
+      <find>reser</find>
+      <find>afficherreser</find>
+      <find>pdf</find>
+      <find>add to</find>
+      <find>pass</find>
+      <find>up</find>
+      <find>upda</find>
+      <find>rdet</find>
+      <find>affic</find>
+      <find>get</find>
+      <find>nombre</find>
+      <find>pag</find>
+      <find>pagi</find>
+      <find>pagin</find>
+      <find>Image</find>
+      <find>ima</find>
+      <find>image</find>
+    </findStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="php bin/console sockets:start-chat" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="c require knplabs/knp-paginator-bundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="c require knplabs/knp-paginator-bundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="php composer.phar require knplabs/knp-menu-bundle ^2.0" />
+      <command text="s cache:clear" />
+      <command text="c require pianosolo/weather-bundle" />
+      <command text="c require egeloen/google-map" />
+      <command text="c require pianosolo/weather-bundle" />
+      <command text="c require php-http/guzzle6-adapter" />
+      <command text="c require php-http/message" />
+      <command text="c require egeloen/serializer" />
+      <command text="c require egeloen/google-map" />
+      <command text="c require egeloen/serializer" />
+      <command text="c require php-http/message" />
+      <command text="c require php-http/guzzle6-adapter" />
+      <command text="c remove egeloen" />
+      <command text="c clear-cache" />
+      <command text="s cache:clear" />
+      <command text="c require egeloen/google-map" />
+      <command text="c require egeloen/google-map-bundle" />
+      <command text="c require egeloen/serializer" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/vendor/egeloen/google-map-bundle/composer.json" />
+        <option value="$PROJECT_DIR$/app/autoload.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherorg.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherguide.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/AjoutReservation.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Controller/RandonneurController.php" />
+        <option value="$PROJECT_DIR$/src/PI/GestionAdminBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Repository/AmisRepository.php" />
+        <option value="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/afficherReclamation.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherReservation.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Profile/show_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Controller/MailController.php" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Controller/RandonneeController.php" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Form/AjoutReser.php" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Controller/GestionReservationController.php" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherReservation.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reservationr.php" />
+        <option value="$PROJECT_DIR$/src/PI/guidesBundle/Controller/ReservationController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/afficherandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/aff.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/Randonneur/Raffichecat.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/affichecatorg.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/afficherandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Allrando.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilorg.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilrand.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetComFront.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/AfficheSujetFront.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/FrontSujet/RechercheSujet.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/SujetView/AfficheSujet.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ForumBundle/Resources/views/rando/detailrandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Resources/views/afficherRandonneur.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMateriel.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUser.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/AfficherUserReclamtion.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUserSingle.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/afficherandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/detailrandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/Recherche.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layoutadmin.html.twig" />
+        <option value="$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/detailrandonnee.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reclamation.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/vendor/gregwar/captcha-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gregwar/captcha" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/hwi/oauth-bundle" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/stream" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/http" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/common" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/parser" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/cboden/ratchet" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/nomaya/social-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/ob/highcharts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-json" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/google-map" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/json-builder" />
+      <path value="$PROJECT_DIR$/vendor/pianosolo/weather-bundle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/serializer" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/google-map-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/php-http/cache-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/vendor/php-http/logger-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/stopwatch-plugin" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReclamationBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReclamationBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReclamationBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaterielBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaterielBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionRandonneurBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionRandonneurBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionRandonneurBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionAdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionAdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionAdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmineBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmineBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmineBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Randonnee" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmineBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmineBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyApp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyApp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PI_WEB-v11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PI_WEB-v11\src\PI" />
+      <recent name="C:\xampp\htdocs\PI_WEB-v11\src\MyApp\UserBundle\Entity" />
+      <recent name="C:\xampp\htdocs\PI_WEB-v11\vendor" />
+      <recent name="C:\xampp\htdocs\PI_WEB-v11\src\PI\AmineBundle" />
+      <recent name="C:\xampp\htdocs\PI_WEB-v11\src\PI\MaterielBundle\Resources\views\Affichage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\PI_WEB-v1\src\PI\GestionRandonneurBundle\Form" />
+      <recent name="C:\wamp64\www\PI_WEB-v1\src\PI\GestionRandonneurBundle\Controller" />
+      <recent name="C:\wamp64\www\PI_WEB-v1\src\PI\MaterielBundle\Resources\views\Affichage" />
+      <recent name="C:\wamp\www\PI_WEB-v2\src\PI\ReclamationBundle\Resources\views" />
+      <recent name="C:\wamp\www\PI_WEB-v1\src\PI\ReclamationBundle\Resources\views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aad39289-f700-47cc-ac9b-13253430cffe" name="Default" comment="" />
+      <created>1490103619753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1490103619753</updated>
+      <workItem from="1490103621081" duration="57000" />
+      <workItem from="1490103728785" duration="3095000" />
+      <workItem from="1490116881045" duration="17826000" />
+      <workItem from="1490185807000" duration="22917000" />
+      <workItem from="1490258581053" duration="22944000" />
+      <workItem from="1490343241900" duration="6121000" />
+      <workItem from="1490360795511" duration="15404000" />
+      <workItem from="1490387998548" duration="5984000" />
+      <workItem from="1490460258767" duration="5701000" />
+      <workItem from="1490523461442" duration="18694000" />
+      <workItem from="1490545869873" duration="746000" />
+      <workItem from="1490546639318" duration="7180000" />
+      <workItem from="1490605588988" duration="6488000" />
+      <workItem from="1490644662728" duration="6439000" />
+      <workItem from="1490704934956" duration="5335000" />
+      <workItem from="1490710938841" duration="4169000" />
+      <workItem from="1490716443038" duration="328000" />
+      <workItem from="1490726124013" duration="669000" />
+      <workItem from="1490726853903" duration="209000" />
+      <workItem from="1490727228213" duration="135000" />
+      <workItem from="1490727387315" duration="29000" />
+      <workItem from="1490727507568" duration="9604000" />
+      <workItem from="1490777450045" duration="11941000" />
+      <workItem from="1490814506623" duration="9806000" />
+      <workItem from="1490884163409" duration="3076000" />
+      <workItem from="1490887422711" duration="14822000" />
+      <workItem from="1490951205148" duration="10823000" />
+      <workItem from="1490981848100" duration="1212000" />
+      <workItem from="1490988736297" duration="285000" />
+      <workItem from="1491050211027" duration="10234000" />
+      <workItem from="1491067573637" duration="1010000" />
+      <workItem from="1491068753582" duration="8331000" />
+      <workItem from="1491393529574" duration="881000" />
+      <workItem from="1491394891998" duration="9062000" />
+      <workItem from="1491408860798" duration="12950000" />
+      <workItem from="1491428451535" duration="7724000" />
+      <workItem from="1491463791518" duration="4682000" />
+      <workItem from="1491479939225" duration="6631000" />
+      <workItem from="1491496180134" duration="14270000" />
+      <workItem from="1491578710085" duration="22065000" />
+      <workItem from="1491637240544" duration="1922000" />
+      <workItem from="1491657791192" duration="7160000" />
+      <workItem from="1491670461889" duration="21974000" />
+      <workItem from="1491727849174" duration="6733000" />
+      <workItem from="1491742691547" duration="31029000" />
+      <workItem from="1491808250149" duration="1029000" />
+      <workItem from="1492186790405" duration="1209000" />
+      <workItem from="1492682794517" duration="3925000" />
+      <workItem from="1492806301485" duration="689000" />
+      <workItem from="1494086193369" duration="7408000" />
+      <workItem from="1495018014222" duration="5793000" />
+      <workItem from="1495032963681" duration="438000" />
+      <workItem from="1495035152702" duration="1685000" />
+      <workItem from="1495054624478" duration="2301000" />
+      <workItem from="1495096534368" duration="4485000" />
+      <workItem from="1495111668985" duration="29687000" />
+      <workItem from="1495215377369" duration="4852000" />
+      <workItem from="1495370166659" duration="500000" />
+      <workItem from="1495371467892" duration="892000" />
+      <workItem from="1495373326047" duration="551000" />
+      <workItem from="1495374749536" duration="9488000" />
+      <workItem from="1495398899542" duration="3368000" />
+      <workItem from="1495408389080" duration="1972000" />
+      <workItem from="1495417130375" duration="808000" />
+    </task>
+    <task id="LOCAL-00001" summary="projet web final">
+      <created>1495141360272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495141360272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="projet web final">
+      <created>1495142160265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495142160265</updated>
+    </task>
+    <task id="LOCAL-00003" summary="projet web final">
+      <created>1495142308690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495142308690</updated>
+    </task>
+    <task id="LOCAL-00004" summary="projet web final">
+      <created>1495143192092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495143192092</updated>
+    </task>
+    <task id="LOCAL-00005" summary="projet web final">
+      <created>1495144223116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495144223116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="459777000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22913617" sideWeight="0.493994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24763407" sideWeight="0.14641288" order="7" side_tool="true" content_ui="tabs" x="0" y="282" width="1280" height="196" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.49369085" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33046874" sideWeight="0.506006" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24763407" sideWeight="0.8535871" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.018018018" sideWeight="0.496875" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078078" sideWeight="0.14140625" order="7" side_tool="true" content_ui="tabs" x="0" y="282" width="1280" height="196" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.073573574" sideWeight="0.85859376" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.49369085" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23515625" sideWeight="0.493994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.018018018" sideWeight="0.496875" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33046874" sideWeight="0.506006" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="projet web final" />
+    <option name="LAST_COMMIT_MESSAGE" value="projet web final" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/PI/GestionRandonneurBundle/Resources/views/listeAmis2.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMateriel.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="61" column="184" lean-forward="false" selection-start-line="61" selection-start-column="179" selection-end-line="61" selection-end-column="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherReclamation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherReservation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherUserReclamtion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherUserReservation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherUserSingleReclmation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AjoutMateriel.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AjoutReclamationUser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/ConfirmationMail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/Email.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/ImpossiblieUserReservation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/ModifierMateriel.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/ModifierReclamationUser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/Pdf.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/Pie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/RechercherMateril.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/ReserverMateriel.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/TraiterReclamation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/detailsRec.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/ModifierUserReclamation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/Pdf.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/TraiterReclamation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherguide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherorg.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherRandonni.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="87" column="90" lean-forward="false" selection-start-line="87" selection-start-column="85" selection-end-line="87" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/afficherReservation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/guidesBundle/Resources/views/offre/Ajoutguide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/MaterielBundle/Resources/views/Affichage/AfficherMaterielUserSingle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/ajoutcr.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/aff.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="69" column="163" lean-forward="false" selection-start-line="69" selection-start-column="158" selection-end-line="69" selection-end-column="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Admin/afficherandonnee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="63" column="163" lean-forward="false" selection-start-line="63" selection-start-column="158" selection-end-line="63" selection-end-column="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/CategorieRandonnee/affichecatorg.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/accueilorg.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" column="91" lean-forward="false" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/afficherandonnee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/detailrandonnee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Rondonneur/Recherche.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="70" lean-forward="false" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/Allrando.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="82" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/modif.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3145">
+          <caret line="185" column="17" lean-forward="false" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Entity/City.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="152" column="87" lean-forward="false" selection-start-line="152" selection-start-column="87" selection-end-line="152" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/BaseBundle/Resources/views/layoutadmin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5780">
+          <caret line="343" column="48" lean-forward="false" selection-start-line="343" selection-start-column="48" selection-end-line="343" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/AfficherUserReclamtion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="49" lean-forward="false" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/ReclamationBundle/Resources/views/afficherReclamation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="21" lean-forward="false" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/GestionAdminBundle/Resources/views/afficherAdmin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="155" lean-forward="false" selection-start-line="137" selection-start-column="150" selection-end-line="137" selection-end-column="155" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Controller/RandonneeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851">
+          <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/afficherandonnee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Reclamation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PI/AmineBundle/Resources/views/Randonnee/detailrandonnee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

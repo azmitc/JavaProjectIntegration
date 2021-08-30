@@ -1,0 +1,94 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block head %}
+    {{ parent() }}
+    <!-- Include the Etalage files -->
+    <link rel="stylesheet" href="{{asset('css/etalage.css')}}">
+    <script src="{{asset('js/jquery.etalage.min.js')}}"></script>
+    <!-- Include the Etalage files -->
+    <script>
+        jQuery(document).ready(function($){
+
+            $('#etalage').etalage({
+                thumb_image_width: 200,
+                thumb_image_height: 300,
+
+                show_hint: true,
+                click_callback: function(image_anchor, instance_id){
+                    alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+                }
+            });
+            // This is for the dropdown list example:
+            $('.dropdownlist').change(function(){
+                etalage_show( $(this).find('option:selected').attr('class') );
+            });
+
+        });
+    </script>
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+
+
+{% block content %}
+
+    <div class="main">
+     <div class="shop_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 single_left">
+                    <div class="single_image">
+                        <ul id="etalage">
+                            <li>
+                                <a href="optionallink.html">
+                                    <img class="etalage_thumb_image" src="{{ 'http://localhost/ImagePi/' ~ mat.imageName}}" />
+                                    <img class="etalage_source_image" src="{{ 'http://localhost/ImagePi/' ~ mat.imageName}}" />
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- end product_slider -->
+                    <div class="single_right">
+                        <h3>NOM: {{ mat.nom }} </h3>
+                        <p class="m_10">Notre site Internet vous facilite la vie en vous apportant de nombreux conseils si vous en avez besoin. Nous savons qu’il n’est pas toujours facile de trouver le bon materiel. Alors contactez-nous au 21989176 si vous avez la moindre question à nous poser sur nos produits : nous essaierons de vous apporter une réponse pour vous faciliter le choix  !</p>
+
+
+
+                        <div class="social_buttons">
+                            <h4>Quantite: {{ mat.quantite}} </h4>
+                      {#     {{ socialButtons( { 'facebook': {'locale':'fr_FR', 'send':true}} ) }} #}
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-info-product">
+                        <p class="price2">{{ mat.prix}} DT</p>
+
+                        <a href="{{ path('user_reservation',{'id':mat.id}) }}" class="exclusive">
+                            <span>Reserver</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="desc">
+                <h4>Description</h4>
+                <p> {{ mat.description}}</p>
+            </div>
+        </div>
+    </div>
+        </div>
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+
+{% endblock %}
+
+{% endblock %}

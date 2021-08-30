@@ -1,0 +1,54 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block content %}
+
+
+    <fieldset>
+        <legend align="center">Recherche</legend>
+        <div style="margin-left:500px;" class="col-xs-3" align="center">
+            {{ form(form) }}
+            {{ form_errors(form) }}
+        </div>
+    </fieldset>
+
+
+
+
+
+
+    <div class="main">
+        <div class="shop_top">
+
+
+            <div class="container">
+
+
+                <div class="row shop_box-top">
+                    {% for r in randonnees %}
+                        <div class="col-md-3 shop_box"><a href="{{path('RdetailR',{'id':r.id})}}">
+                                <img src="{{ 'http://localhost/ImagePi/' ~ r.imageName}}" class="img-responsive" alt=""/>
+
+
+                                <div class="shop_desc">
+                                    <h3>{{ r.lieu }}</h3>
+                                    <p> {{ r.dateDebut|date('Y-m-d') }} à {{ r.heureDepart|date('h') }}h - {{ r.dateFin|date('Y-m-d') }} à {{ r.heureRetour|date('h') }}h </p>
+
+                                    <p>{{ r.description }} </p>
+                                    <span class="actual">{{ r.prix }} DT</span><br>
+
+                                </div>
+
+
+
+                            </a></div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+{% block content %}
+    <div class="row">
+
+        <div class="col-md-4 team_bottom">
+
+
+
+
+
+
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th><h3>Les utilisateurs</h3></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    {% for us in users %}
+
+                        <tr>
+
+
+                            <td>{{ us.nom}}
+
+                                <a href="{{ path('Liste_tous',{'nom':us.nom}) }}" class="btn btn-xs btn-success"> <i class="ace-icon fa glyphicon-plus bigger-120"></i></a>
+
+                            </td>
+
+
+                        </tr>
+
+                    {% endfor %}
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-4">
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th><h3>Vos Amis</h3></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    {% for us in amis %}
+                        <tr>
+                            <td>{{ us.nomAmis}}
+                                <a href="{{ path('supp_ami',{'id':us.id}) }}" class="btn btn-danger btn-xs" > <i class="ace-icon fa glyphicon-minus icon-only "></i></a>
+
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+{% endblock %}
+{% block testimonails %}
+{% endblock %}

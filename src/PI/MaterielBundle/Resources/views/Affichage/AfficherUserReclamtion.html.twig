@@ -1,0 +1,89 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+{% block content %}
+
+                    <h4 class="page-head-line">Vos Rèclamation</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+
+                    <a href="{{ path('user_reclamationAjouter') }}" class="btn btn-success"><span class="glyphicon glyphicon-tags"></span>  Envoyer une rèclamation </a>
+                    <br>                  <br>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>{{  knp_pagination_sortable(Reclamation,'Nom du materiel','Rec.refmateriel')}}</th>
+
+                                <th>{{  knp_pagination_sortable(Reclamation,'Description','Rec.description')}}</th>
+                                <th>{{  knp_pagination_sortable(Reclamation,'Type','Rec.typereclamation')}}</th>
+
+
+                                <th>Date Reclamation</th>
+                                <th>{{  knp_pagination_sortable(Reclamation,'Etat ','Rec.etatReclamation')}}</th>
+                                <th>Opération</th>
+
+
+
+                            </tr>
+                            </thead>
+                            <tbody>
+
+
+                            {% for Rec in Reclamation %}
+                                <tr>
+                                    <td>{{ Rec.refmateriel.nom}} </td>
+                                    <td>{{ Rec.description }}</td>
+                                    <td>{{ Rec.typereclamation }}</td>
+
+                                    <td>{{ Rec.dateEnvoi|date }}</td>
+                                    <td>{{ Rec.etatReclamation }}</td>
+
+                                    {% if(Rec.etatReclamation == "en cours" )%}
+                                        <td><a href="{{ path('user_reclamationModif',{'id':Rec.id}) }}" class="btn btn-success">Rectifier</a></td>
+                                    {% endif %}
+                                    {% if(Rec.etatReclamation == "traité") %}
+                                        <td><a href="{{ path('user_reclamationAffichRest',{'id':Rec.id}) }}" class="btn btn-success">Consulter</a></td>
+                                    {% endif %}
+
+                                </tr>
+                            {% endfor %}
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    {{ knp_pagination_render(Reclamation) }}
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+
+{% endblock %}
+
+{% endblock %}

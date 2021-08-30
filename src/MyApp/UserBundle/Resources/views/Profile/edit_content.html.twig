@@ -1,0 +1,15 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+
+<center>
+    {{ form_widget(form) }} <br>
+    <br>
+    <div>
+        <input type="submit" class="btn btn-info" value="{{ 'profile.edit.submit'|trans }}" />
+    </div>
+    {{ form_end(form) }}
+    <br><br>
+    <a href="{{path('fos_user_change_password')}}">Changer le mot de passe</a>
+
+</center>

@@ -1,0 +1,171 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Google fonts -->
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700')}}' rel='stylesheet' type='text/css'>
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Josefin+Sans:600')}}' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="{{ asset('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!-- bootstrap --
+<link rel="stylesheet" href="{{ asset('assets2/bootstrap/css/bootstrap.min.css')}}" />
+
+<!-- animate.css -->
+    <link rel="stylesheet" href="{{ asset('assets2/animate/animate.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets2/animate/set.css')}}" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="{{ asset('assets2/gallery/blueimp-gallery.min.css')}}">
+
+
+
+{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block banner2 %}
+        {{ parent() }}
+    {% endblock %}
+    {% block content %}
+        {{ parent() }}
+        <!--
+<div class="pagination">
+    <div class="pagination-buttons">
+<div class="count">
+   Nombre total : {{ pagination.getTotalItemCount }}
+</div>
+<table>
+<tr>
+{# sorting of properties based on query components #}
+
+    <th{% if pagination.isSorted('a.ID') %} class="sorted"{% endif %}></th>
+
+</tr>
+
+{# table body #}
+                        {% for Reclamation in pagination %}
+<tr>
+    <td>{{ Reclamation.type }}</td>
+    <td>{{ Reclamation.description }}</td>
+</tr>
+{% endfor %}
+</table>
+{# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------->
+        <div id="home">
+            {% for flashMessage in app.session.flashbag.get('notice') %}
+
+            <div class="alert alert-success">
+                {{ flashMessage }}
+            </div>
+            {% endfor %}
+            <!-- Slider Starts -->
+            <center>
+                <div class="banner">
+                    <div class="caption">
+                        <div class="caption-wrapper">
+                            <div class="caption-info">
+                                <img src="{{asset('images/logo.png')}}" alt=""/>
+                                <h2 class="animated bounceInUp">Les réclamations..ICI</h2>
+                                <h3 class="animated bounceInLeft">Randonni est à votre écoute </h3>
+
+                                <span class="animated bounceInDown"><a href="{{ path('reclamationRand_ajoutUser') }}" class="btn btn-danger">Faire une réclamation</a></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- #Slider Ends -->
+
+        </div>
+<!--------------------------------------------------------------------------------------->
+        <div class="main">
+            <div class="shop_top">
+                <div class="container">
+                    <div class="row shop_box-top">
+                        {% for Reclamation in pagination %}
+
+                            <div class="col-md-3 shop_box"><a href="{{path('reclamationRand_details',{'id':Reclamation.id}) }}">
+                                  {% if Reclamation.Randonnee.getImageName() !="NULL" %}
+                                    <img src="{{asset('http://localhost/ImagePi/' ~ Reclamation.Randonnee.getImage())}}" class="img-responsive" alt=""/>
+                                    {% endif %}
+                                    <span class="sale-box">
+                                            {% if(Reclamation.etat == "en cours" )%}
+                                                <span class="sale-label" style="font-size: x-small">En cours</span>
+                                            {% endif %}
+					</span>
+                                    {% if(Reclamation.etat == "traité") %}
+                                    <span class="new-box">
+						<span class="new-label">Traité</span>
+                                        {% endif %}
+					</span>
+                                    <div class="shop_desc">
+                                        <a class="shop_btn" href="{{path('reclamationRand_supprimer',{'id':Reclamation.id})}}" onclick="return confirm('Vous etes sure de vouloir supprimer ?')">
+                                            <i title="supprimer réclamation" class="ace-icon fa fa-trash-o bigger-130"></i>
+                                        </a>
+                                        <h3> <a href="{{path('reclamationRand_details',{'id':Reclamation.id}) }}">{{Reclamation.type}}</a> </h3>
+                                        <p>Randonnée :<br> {{Reclamation.Randonnee.description}} </p>
+                                        <center>
+
+                                        </center>
+                                        <ul class="buttons">
+                                            <li class="cart"><a href="#">{{Reclamation.dateEnvoi|date('d/m/y H:i:s')}}</a></li>
+
+                                            {% if(Reclamation.etat == "en cours" )%}
+                                                <li class="shop_btn"><a href="{{ path('reclamationRand_modifier',{'id':Reclamation.id}) }}" class="btn btn-success">Rectifier</a></li>
+                                            {% endif %}
+                                            {% if(Reclamation.etat == "traité") %}
+                                                <li class="shop_btn"><a href="{{ path('reclamationRand_details',{'id':Reclamation.id}) }}" class="btn btn-success">Consulter</a></li>
+                                            {% endif %}
+                                            <div class="clear"> </div>
+                                            <li><span><a href="{{ path('Pdf_rando',{'idDemande':Reclamation.id}) }}" class="btn btn-warning">Pdf</a></span></li>
+
+                                        </ul>
+                                    </div>
+
+
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+                <center>
+                    <div class="navigation">
+                        {{ knp_pagination_render(pagination) }}
+                    </div>
+                </center>
+            </div>
+
+        </div>
+
+
+    {% endblock %}
+
+    {% block footer %}
+        {{ parent() }}
+
+
+    {% endblock %}
+    {% block js %}
+        {{ parent() }}
+
+
+    {% endblock %}
+
+{% endblock %}

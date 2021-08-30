@@ -1,0 +1,35 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+
+
+{% for r in randonnee %}
+
+<fieldset >
+
+
+
+    <div align="center">
+        <img src="{{ 'http://localhost/ImagePi/' ~ r.imageName}}" width="300" length="300" ><br>
+            Date :   {{ r.dateDebut|date('d-m-Y') }} à {{ r.heureDepart|date('h') }}h - {{ r.dateFin|date('d-m-Y') }} à {{ r.heureRetour|date('h') }}h<br>
+
+
+            Description : {{ r.description }}
+
+            <br> Lieu : {{ r.lieu }}
+            <br> Prix : {{ r.prix }}Dt
+            <br> Equipements : {{ r.equipments }}
+            <br> Niveau : {{ r.niveau }}
+        <br> Categorie : {{ r.categorie.getNom() }}
+            <br> Circuit : {{ r.circuit }}
+            <br> Nombre de Places : {{ r.nbrplace }}
+            <br> Guide : {{ r.guidid }}
+
+            <br>
+
+
+
+    </div>
+</fieldset>
+{% endfor %}
+{% endblock %}

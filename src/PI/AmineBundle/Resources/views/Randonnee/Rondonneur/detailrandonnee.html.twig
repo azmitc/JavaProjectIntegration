@@ -1,0 +1,41 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+
+
+
+
+        <fieldset >
+
+
+
+            <div align="center">
+                 <img src="/Image/{{ randonnee.imageName }}" width="300" length="300">
+
+
+              <br>
+                          Date :   {{ randonnee.dateDebut|date('Y-m-d') }} à {{ randonnee.heureDepart|date('h') }}h - {{ randonnee.dateFin|date('Y-m-d') }} à {{ randonnee.heureRetour|date('h') }}h<br>
+
+
+                Description : {{ randonnee.description }}
+
+                <br> Lieu : {{ randonnee.lieu }}
+                <br> Prix : {{ randonnee.prix }}Dt
+                <br> Equipements : {{ randonnee.equipments }}
+                <br> Niveau : {{ randonnee.niveau }}
+                <br> Categorie : {{ randonnee.categorie.getNom() }}
+                <br> Circuit : {{ randonnee.circuit }}
+                <br> Nombre de Places : {{ randonnee.nbrplace }}
+                <br> Guide : {{ randonnee.guidid }}
+
+
+     <br>
+<strong>Temperature : {{ temperature }}</strong>
+
+                {{ ivory_google_map(map) }}
+                {{ ivory_google_api([map]) }}
+                <a href="{{ path('esprit_parc_ajout',{'id':randonnee.id}) }}">Reserver</a>
+            </div>
+        </fieldset>
+
+{% endblock %}

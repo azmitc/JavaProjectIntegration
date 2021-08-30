@@ -1,0 +1,58 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="main">
+        <div class="shop_top">
+
+
+            <div class="container">
+
+
+                <div class="row shop_box-top">
+                    {% for r in randonnee %}
+                        <div class="col-md-3 shop_box"><a href="{{path('detailR',{'id':r.id})}}">
+                                <img src="{{ 'http://localhost/ImagePi/' ~ r.imageName}}" class="img-responsive" alt=""/>
+                                {% if(r.etat == 0 )%}
+
+                                    <div class="shop_desc">
+                                        <h3>{{ r.lieu }}</h3>
+                                        <p> {{ r.dateDebut|date('Y-m-d') }} à {{ r.heureDepart|date('h') }}h - {{ r.dateFin|date('Y-m-d') }} à {{ r.heureRetour|date('h') }}h </p>
+
+                                        <p>{{ r.description }} </p>
+                                        <span class="actual">{{ r.prix }} DT</span><br>
+                                        <ul class="buttons">
+                                            <li class="cart"><a href="{{ path('supprimer',{'id':r.id}) }}">Annuler</a></li>
+                                            <li class="shop_btn"><a href="{{path('modifier',{'id':r.id})}}">Modifier </a></li>
+                                            <div class="clear"> </div>
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                                {% if(r.etat == 1 )%}
+
+                                    <span class="new-box">
+						<span class="new-label">Validée</span>
+					</span>
+                                    <div class="shop_desc">
+                                    <h3>{{ r.lieu }}</h3>
+                                    <p>{{ r.dateDebut|date('Y-m-d') }} à {{ r.heureDepart|date('h') }}h - {{ r.dateFin|date('Y-m-d') }} à {{ r.heureRetour|date('h') }}h </p>
+                                     <p>{{ r.description }} </p>
+                                    <span class="actual">{{ r.prix }} DT</span><br>
+                                    <ul class="buttons">
+                                        <li class="cart"><a href="{{ path('supprimer',{'id':r.id}) }}">Annuler</a></li>
+                                        <li class="shop_btn"><a href="{{path('modifier',{'id':r.id})}}">Modifier </a></li>
+                                        <div class="clear"> </div>
+                                    </ul>
+
+                                    </div>{% endif %}
+                            </a></div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

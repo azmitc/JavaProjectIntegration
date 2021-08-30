@@ -1,0 +1,365 @@
+{# empty Twig template #}
+<html>
+    <head>
+                {% block head %}
+
+        <meta charset="utf-8"/>
+        {% block stylesheet %}
+            <link href="{{ asset('css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+<link href="{{ asset('css/style.css')}}" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{{ asset('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800')}}" rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<!-- favicon -->
+<link rel="shortcut icon" href="{{ asset('images/favicon.jpg')}}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.jpg')}}" type="image/x-icon">
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="{{ asset('css/fwslider.css')}}" media="all">
+<script src="{{asset('js/jquery-ui.min.js')}}"></script>
+<script src="{{asset('js/fwslider.js')}}"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+            {%endblock%}
+                            {%endblock%}
+
+    </head>
+
+
+
+    <body>
+                {%block body %}
+					<!--  <title>{% block title %} Events {%endblock%}</title>-->
+                {% block header %}
+
+					<div class="header">
+
+
+
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="header-left">
+										<div class="logo">
+											<a href="{{path('pi_base_homepage')}}"><img src="{{asset('images/logo.png')}}" alt=""/></a>
+										</div>
+										<div class="menu">
+											<a class="toggleMenu" href="#"><img src="{{asset('images/nav.png')}}" alt="" /></a>
+											<ul class="nav" id="nav">
+											{% if is_granted('ROLE_RANDONNEUR') %}
+
+												<li><a href="{{path('pi_base_homepage')}}">Accueil </a></li>
+												<li><a href="{{path('Raffichecr')}}">Randonnées</a>
+												<li><a href="{{path('user_materiel')}}">Matériels</a></li>
+												<li><a href="{{ path('user_reclamationAjouter') }}">Reclamation materiel</a></li>
+
+												<li><a href="{{path('pi_sujet_affiche_front')}}">Sujet</a></li>
+												{% endif %}
+
+                                                {% if is_granted('ROLE_AGENCE') %}
+
+													<li><a href="{{path('pi_base_homepage')}}">Accueil </a></li>
+													<li><a href="{{path('affichecr')}}">Randonnées</a>
+													<li><a href="{{path('ajout')}}">ajouter une randonnée</a></li>
+													<li> <a href="{{path('Allrando')}}"> Toutes les randonnées</a> </li>
+													<li><a href="{{path('user_materiel')}}">Matériels</a></li>
+													<li><a href="{{path('pi_sujet_affiche_front')}}">Sujet</a></li>
+                                                {% endif %}
+
+                                                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+													<li >
+														<a href="{{path('pi_disc')}}">
+															Chat
+														</a>
+													</li>
+													<li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>
+													<li><a href="{{ path('fos_user_security_logout') }}">Se déconnecter</a></li>
+
+                                                {% else %}
+													<li><a href="{{ path('fos_user_registration_register') }}">Ouvrir un compte</a></li>
+													<li><a href="{{ path('fos_user_security_login') }}">Se connecter</a></li>
+                                                {% endif %}
+												<!--<li><a href="{{path('pi_base_homepage')}}">Créer un évènement </a></li>
+						        <!--<li><a href="contact.html">Contact</a></li>	-->
+												<div class="clear"></div>
+											</ul>
+											<script type="text/javascript" src="{{asset('js/responsive-nav.js')}}"></script>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="header_right">
+										<!-- start search-->
+										<div class="search-box" hidden>
+											<div id="sb-search" class="sb-search">
+												<form>
+													<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+													<input class="sb-search-submit" type="submit" value="">
+													<span class="sb-icon-search"> </span>
+												</form>
+											</div>
+										</div>
+										<!----search-scripts---->
+										<script src="{{asset('js/classie.js')}}"></script>
+										<script src="{{asset('js/uisearch.js')}}"></script>
+										<script>
+                                            new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+										<!----//search-scripts---->
+										<ul class="icon1 sub-icon1 profile_img">
+											<li><a class="active-icon c1" href="#"> </a>
+												<ul class="sub-icon1 list">
+													<div class="product_control_buttons">
+														<a href="{{path('fos_user_profile_edit')}}"><img src="{{asset('images/edit.png')}}" alt=""/></a>
+														<a href="#"><img src="{{asset('images/close_edit.png')}}" alt=""/></a>
+													</div>
+													<div class="clear"></div>
+                                                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+														<li class="list_img"><img src="{{ 'http://localhost/ImagePi/' ~app.user.getImageName()}}"style="width: 50px;height: 49px" alt=""/></li>
+														<li class="list_desc"><h4><center> <a href="{{ path('fos_user_profile_show') }}">{{ app.user.username }}</a></center></h4><span class="actual"> </span></li>
+														<center>
+															<div class="login_buttons">
+																<div class="check_button"><a href="{{ path('fos_user_security_logout') }}">Se déconnecter </a></div>
+                                                                {% if is_granted('ROLE_ADMIN') %}
+																	<div class="login_button"><a href="{{path('admin_accueil')}}">Administration </a></div>
+                                                                {% endif %}
+															</div>
+														</center>
+                                                    {% else %}
+														<div class="login_buttons">
+															<div class="check_button"><a href="{{ path('fos_user_security_login') }}">Se connecter </a></div>
+															<div class="login_button"><a href="{{ path('fos_user_registration_register') }}">Ouvrir un compte</a></div>
+															<div class="clear"></div>
+														</div>
+                                                    {% endif %}
+												</ul>
+											</li>
+										</ul>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                {%endblock%}
+                    	{% block banner %}
+
+	<div class="banner">
+
+	<!-- start slider -->
+       <div id="fwslider">
+         <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+               <img src="{{asset('images/slider1.jpg')}}" class="img-responsive" alt=""/>
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                        
+                        <h1 class="title"> ...<br> ...</h1>
+                        <!-- /Text title -->
+                        <div class="button"><a href="{{path('pi_base_homepage')}}">Voir Details</a></div>
+                    </div>
+                </div>
+               <!-- /Texts container -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+               <img src="{{asset('images/slider2.jpg')}}" class="img-responsive" alt=""/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h1 class="title">Organisez vos<br>randonnées</h1>
+                       	<div class="button"><a href="{{path('pi_base_homepage')}}">Voir Details</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+       <!--/slider -->
+
+      </div>
+             {% endblock %}
+             {% block banner2 %}
+
+                 {% endblock %}
+
+
+
+                                     {% block content %}
+                        
+                                         {% endblock %}
+
+       <!-- <h1 id="top"><a href="/"><img alt="blog" src="{{asset('img/blog.jpg')}}"/></a></h1>-->
+                                         {% block testimonails %}
+                                             <div id="testimonials" class="container spacer ">
+	<h2 class="text-center  wowload fadeInUp">Testimonails</h2>
+  <div class="clearfix">    
+    <div class="col-sm-6 col-sm-offset-3">
+
+
+    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
+    <div class="carousel-inner">  
+      <div class="item active animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="{{ asset('images/team/1.jpg')}}" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>      
+      <span>Angel Smith - <b>eshop Canada</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="{{ asset('images/team/2.jpg')}}" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+      <span>John Partic - <b>Crazy Pixel</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="{{ asset('images/team/3.jpg')}}" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
+      <span>Harris David - <b>Jet London</b></span>
+      </div>
+      </div>
+  </div>
+
+   <!-- Indicators -->
+   	<ol class="carousel-indicators">
+    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+  	</ol>
+  	<!-- Indicators -->
+  </div>
+
+
+
+    </div>
+  </div>
+
+
+
+</div>
+                                             {% endblock %}
+                             {% block footer %}
+
+            		<div class="footer">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>ÉVÉNEMENTS</h4>
+							<li><a href="{{path('pi_base_homepage')}}">Recherche multicritère</a></li>
+							<li><a href="{{path('pi_base_homepage')}}">Rechercher par catégorie</a></li>
+							<li><a href="{{path('pi_base_homepage')}}">Créer un évenement</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>A propos </h4>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">Team</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Service client</h4>
+							<li><a href="#">Contactez-nous</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+                        </div>
+                                             {%endblock%}
+
+		
+                                             {% block js %}
+                                                                                 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+
+<!-- jquery --
+<script src="{{ asset('assets2/jquery.js')}}"></script>
+
+
+
+<!-- wow script -->
+<script src="{{ asset('assets2/wow/wow.min.js')}}"></script>
+
+
+<!-- boostrap -->
+<script src="{{ asset('assets2/bootstrap/js/bootstrap.js')}}" type="text/javascript" ></script>
+
+<!-- jquery mobile -->
+<script src="{{ asset('assets2/mobile/touchSwipe.min.js')}}"></script>
+<script src="{{ asset('assets2/respond/respond.js')}}"></script>
+
+<!-- gallery -->
+<script src="{{ asset('assets2/gallery/jquery.blueimp-gallery.min.js')}}"></script>
+
+<!-- custom script -->
+<script src="{{ asset('assets2/script.js')}}"></script>
+{% endblock %}
+            
+        {%endblock%}
+    </div>
+    </body>
+    
+</html>

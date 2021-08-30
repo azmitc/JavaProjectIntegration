@@ -1,0 +1,139 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<!--------------------------------------------------->
+<div id="home">
+    <!-- Slider Starts -->
+    <center>
+        <div class="banner">
+            <div class="caption">
+                <div class="caption-wrapper">
+                    <div class="caption-info">
+                        <img src="{{asset('images/logo.png')}}" alt=""/>
+                        <h3 class="animated bounceInUp">Bienvenue {{  app.user.username }} </h3>
+                        <h4 class="animated bounceInLeft">Randonni bien avec nous ! </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <!-- #Slider Ends -->
+
+</div>
+<br>
+<br>
+<!--------------------------------------------------------->
+<div class="fos_user_user_show">
+
+    <center>
+        <div id="user-profile-1" class="user-profile row">
+            <div class="col-xs-12 col-sm-3 center">
+                <div>
+												<span class="profile-picture">
+													<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="{{ 'http://localhost/Image/' ~ user.getImageName()}}" />
+												</span>
+
+                    <div class="space-4"></div>
+
+                    <div class="label label-sm label-primary arrowed arrowed-right">
+                        <div class="inline position-relative">
+                            <a href="#" class="user-title-label" >
+                                <i class="ace-icon fa fa-circle light-green"></i>
+
+                                <span class="white">{{user.username}}</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-6"></div>
+
+                <div class="profile-contact-info">
+                    <div class="profile-contact-links align-left">
+
+                        <a href="{{ path('app_mail_homepage')}}" class="btn btn-link">
+                            <i class="ace-icon fa fa-envelope bigger-120 pink"></i>
+                            Mailer l'administration
+                        </a>
+
+                        <a href="{{ path('reclamationRand_afficheUser')}}" class="btn btn-link">
+                            <i class="ace-icon fa fa-exclamation-circle"></i>
+                            Vos reclamations
+                        </a>
+                        <a href="{{ path('Liste_tous1')}}" class="btn btn-link">
+                            <i class="ace-icon fa fa-users bigger-120 green"></i>
+                            Vos Amis
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        <!-------------------------------------------------------------------------------->
+        <div class="col-xs-12 col-sm-7">
+            <div class="space visible-xs"></div>
+        <div class="profile-user-info profile-user-info-striped">
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Nom </div>
+
+                <div class="profile-info-value">
+                    <span>{{user.nom}}</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Nom d'utilisateur </div>
+
+                <div class="profile-info-value">
+                    <i class="fa fa-map-marker light-orange bigger-110"></i>
+                    <span>{{user.username}}</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Nombre de Points </div>
+
+                <div class="profile-info-value">
+                    <span>{{user.getPtFidel()}}</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Anniversaire </div>
+
+                <div class="profile-info-value">
+                    <span> {{user.birthday|date('d/m/y')}}</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Date de creation </div>
+
+                <div class="profile-info-value">
+                    <span> {{user.joinDate|date('d/m/y H:i:s')}}</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Téléphone  </div>
+
+                <div class="profile-info-value">
+                    <span>{{user.numtel}}</span>
+                </div>
+            </div>
+        </div>
+<!-----------------------------------------------------------------------------------------------------
+        <h4>{{ 'profile.show.username'|trans }}: {{ user.username }}</h4>
+        <h4>{{ 'profile.show.email'|trans }}: {{ user.email }}</h4>
+<!------------------------------------------------------------------------------------------------------>
+
+<br>
+            <form action="{{path('fos_user_profile_edit')}}" >
+            <input type="submit" class="btn btn-info" value="Modifier le compte">
+        </form>
+    </center>
+</div>
+
+</div>

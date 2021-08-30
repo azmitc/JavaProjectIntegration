@@ -1,0 +1,18 @@
+Randonneurs_affiche:
+    path:     /admin/AfficheRandonneurs
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:afficheListe}
+Randonneurs_supprimer:
+    path:     /admin/supprimerRandonneur/{id}
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:supprimer }
+Randonneurs_desactiver:
+    path:     /admin/desactiverRandonneur/{id}
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:desactiver }
+app_mail_homepage:
+    path:     /user/contact
+    defaults: { _controller: PIGestionRandonneurBundle:Mail:contact }
+Randonneurs_promote:
+    path:     /admin/promoteRandonneur/{id}
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:promote }
+Recherche_Randonneurs:
+    path:     /admin/Randonneurs
+    defaults: { _controller: PIGestionRandonneurBundle:Randonneur:Recherche }

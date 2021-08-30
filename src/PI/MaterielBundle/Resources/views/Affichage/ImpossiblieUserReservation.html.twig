@@ -1,0 +1,54 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block content %}
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">Vos Rèclamation</h4>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-warning">
+
+                        <th>
+                            <a href="{{ path('user_reservation',{'id':mat.id}) }}" class="btn btn-success"><span class="glyphicon glyphicon-tags"></span> &nbsp  Retour au liste de rèclamation </a>
+                        </th>
+
+
+                        <div class="">
+                            Impossible de Reserver avec cette quantite
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+        {% block footer %}
+            {{ parent() }}
+        {% endblock %}
+
+
+    {% endblock %}
+{% endblock %}

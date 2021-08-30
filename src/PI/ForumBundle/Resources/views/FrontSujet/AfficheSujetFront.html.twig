@@ -1,0 +1,72 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+ {% block content %}
+
+     <div class="features">
+
+         <div class="container">
+             <h3 class="m_3">Sujets Forum</h3>
+             <form role="form" method="post" action="{{ path('Recherche_Suj') }}">
+                 <ul>
+                     <li> <i class="fa fa-search"></i><input type="text" class="search-form"  name="recherchealerte" placeholder="Search"> </li>
+                 </ul>
+             </form>
+             <div class="row">
+
+                 {% for sujet in sujet %}
+
+
+
+
+                 <div class="col-md-3 top_box">
+                     <div class="view view-ninth"><a href="{{ path('pi_sujet1Com_affiche_front',{'id':sujet.id}) }}">
+                             <img src="{{ 'http://localhost/ImagePi/' ~ sujet.imageName}}" class="img-responsive" style="width: 300px; height: 200px;"alt=""/>
+                             <div class="mask mask-1"> </div>
+                             <div class="mask mask-2"> </div>
+                             <div class="content">
+                                 <h2>{{ sujet.titre}}</h2>
+                                 <p>{{ sujet.theme}}</p>
+                             </div>
+                         </a>     </div>
+                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+                         <a href="{{ path('pi_note_ajouter',{'id':sujet.id})}}">
+                             {{ 0|rating }}
+
+                     </a>
+                         {% endif %}
+                 </div>
+
+                 {% endfor %}
+     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+                 <a href="{{ path('pi_sujet_ajoute_front')}}">
+                     <img src="http://www.icone-png.com/png/53/53324.png" >
+                 </a>
+         {% endif %}
+             </div>
+         </div>
+     </div>
+
+
+ {% endblock %}
+
+  {% block testimonials %}
+      <div class="item active animated bounceInRight row">
+          <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="{{ asset('images/team/2.jpg')}}" width="100" class="img-circle img-responsive"></div>
+
+          <div  class="col-xs-10">
+              <p> text </p>
+              <span>titre <b>user</b></span>
+          </div>
+      </div>
+      {% for suj in suj %}
+          <div class="item  animated bounceInRight row">
+              <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="{{ 'http://localhost/Image/' ~ suj.imageName}}" width="100" class="img-circle img-responsive"></div>
+              <div  class="col-xs-10">
+                  <p> {{ suj.text}} </p>
+                  <span>{{ suj.titre}} <b>{{ suj.nameUser}}</b></span>
+              </div>
+
+          </div>
+      {% endfor %}
+  {% endblock %}

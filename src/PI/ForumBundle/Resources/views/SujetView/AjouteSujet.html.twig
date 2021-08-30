@@ -1,0 +1,18 @@
+{% extends "PIBaseBundle::layoutadmin.html.twig" %}
+{% block content %}
+    <div class="page-header">
+        <h1>
+            Form Sujet
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+               Ajouter un Sujet
+            </small>
+        </h1>
+    </div>
+
+        {{ form(form) }}
+        {{ form_errors(form) }}
+
+
+
+{% endblock %}

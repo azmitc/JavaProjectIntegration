@@ -1,0 +1,60 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+ {% block content %}
+     <div>
+
+
+     </div>
+     <div class="row">
+
+         <div class="col-md-4 team_bottom">
+             {% for sujet in sujet %}
+
+             <ul class="team_list">
+                 <h4>{{ sujet.titre}}</h4>
+                 {{ moy|rating }}
+                 <p class="m_7">{{ sujet.text }}.</p>
+                 <img class="etalage_small_thumb" src="{{ 'http://localhost/ImagePi/' ~ sujet.imageName}}" style="width: 300px; height: 200px;">
+                 <div class="social_buttons">
+
+                     <h6>Nombre de Participants :  {{ sujet.nbParticipants }}</h6>
+                     {{ socialButtons() }}
+
+                 </div>
+
+
+</ul>
+
+             {% endfor %}
+
+
+         </div>
+         <div class="col-md-4">
+         </div>
+
+         <div class="col-md-8">
+             <h4>Commentaires</h4>
+     {% for commentaire in commentaire %}
+
+         <ul class="team_list">
+
+             <li>
+
+
+                 <a href="#"><div class=""><img alt="portfolio" src="{{ asset('images/team/2.jpg')}}" width="40" class="img-circle img-responsive">{{ commentaire.userId }}</a><p>{{ commentaire.text }}</p>
+                 {% if commentaire.userId == us %}
+            <a href="{{ path('pi_commentaireFront_supprimer',{'id':commentaire.idCom}) }}" class="btn btn-xs btn-danger"> <i class="ace-icon fa fa-exclamation-triangle bigger-120">Supp</i></a>
+{% endif %}
+           <a href="{{ path('signal_comm',{'id':commentaire.idCom}) }}" class="btn btn-xs btn-inverse"> <i class="ace-icon fa fa-exclamation-triangle bigger-120">Signal</i></a>
+
+                 </li>
+             </ul>
+         {% endfor %}
+             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+             {{ form(form) }}
+             {{ form_errors(form) }}
+             {% endif %}
+         </div>
+     </div>
+ {% endblock %}
+

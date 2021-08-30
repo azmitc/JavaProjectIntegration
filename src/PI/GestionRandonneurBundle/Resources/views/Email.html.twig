@@ -1,0 +1,55 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="col-md-12">
+
+        <h2> <strong> Nous Contacter</strong> </h2>
+        <hr>
+
+        {{ form_start(form) }}
+
+        <div>Sujet:</div>
+        <div>
+            {{ form_widget(form.subject) }}
+            {{ form_errors(form.subject) }}
+        </div>
+        <div>Nom:</div>
+        <div>
+            {{ form_widget(form.name) }}
+            {{ form_errors(form.name) }}
+        </div>
+        <div>Adresse mail:</div>
+        <div>
+            {{ form_widget(form.email) }}
+            {{ form_errors(form.email) }}
+        </div>
+            <div>Mot de passe:</div>
+            <div>
+                {{ form_widget(form.password) }}
+                {{ form_errors(form.password) }}
+            </div>
+        <div>Message:</div>
+        <div>
+            {{ form_widget(form.message) }}
+            {{ form_errors(form.message) }}
+        </div>
+
+
+        <div style="display:none">
+            {{ form_rest(form) }}
+        </div>
+        <hr />
+        <input class="form-control" type="submit" value="Submit">
+    </div>
+    {{ form_end(form) }}
+    <div class="panel-footer text-muted">
+        <strong>Note : </strong>Un Administrateur vous répondra dans les plus brefs délais.
+    </div>
+
+    </div>
+{% endblock%}
+{% block testimonails %}
+
+{% endblock %}

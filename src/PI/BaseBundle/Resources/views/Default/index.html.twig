@@ -1,0 +1,144 @@
+{% extends "PIBaseBundle::layout.html.twig" %}
+
+
+{% block head %}
+    {{ parent() }}
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Google fonts -->
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700')}}' rel='stylesheet' type='text/css'>
+    <link href='{{ asset('http://fonts.googleapis.com/css?family=Josefin+Sans:600')}}' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="{{ asset('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!-- bootstrap --
+<link rel="stylesheet" href="{{ asset('assets2/bootstrap/css/bootstrap.min.css')}}" />
+
+<!-- animate.css -->
+    <link rel="stylesheet" href="{{ asset('assets2/animate/animate.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets2/animate/set.css')}}" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="{{ asset('assets2/gallery/blueimp-gallery.min.css')}}">
+
+
+    <link rel="stylesheet" href="{{ asset('assets2/style.css')}}">
+{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block banner %}
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+
+            <div class="alert alert-success">
+                {{ flashMessage }}
+            </div>
+            <center>
+                <div id="panel1" class="col-md-12" class="panel panel-primary" hidden>
+                    <div class="panel-heading">
+                        <b>Joyeux anniversaire {{ app.user.username }}!!<b>
+                    </div>
+                    <div class="panel-body">
+                        <a href="{{path('fos_user_profile_show')}}"><img src="{{asset('images/ballonbirthday.gif')}}"  width =300 alt="cliquer ici ! " id="fidelitepic"></a>
+
+                    </div>
+                </div>
+            </center>
+        {% endfor %}
+<div class="banner">
+        <video class="bg-video hidden-sm hidden-xs" preload="auto" autoplay="true" loop="loop" muted="muted" poster="{{ asset('img/video-bg.jpg')}}">
+           <!-- <source src="{{ asset('media/loop.webm')}}" type="video/webm" />-->
+            <source src="{{ asset('media/Tunisia.mp4')}}" type="video/mp4" />
+        </video>
+    <!---
+    <div class="rel full-height">
+
+    <div class="tagline visible-lg" id="tagline"><span>It's time to</span>
+        <ul>
+            <li>live</li>
+            <li>have fun</li>
+            <li>relax</li>
+            <li>meet</li>
+            <li>being lost</li>
+            <li>run away</li>
+            <li>go</li>
+            <li>explore</li>
+            <li>find new friends</li>
+            <li class="active">discover</li>
+            <li>play</li>
+        </ul>
+    </div>
+</div>
+--->
+</div>
+    {% endblock %}
+    {% block banner2 %}
+        {{ parent() }}
+    {% endblock %}
+    {% block content %}
+        {{ parent() }}
+        <div class="main">
+            <div class="content-top">
+              {#  {% if "now"|date('m-d') == app.user.birthday |date('m-d') %} #}
+
+              {#   {%  endif %} #}
+<center>
+                <h1>Bienvenue !</h1>
+      {% if "now"|date('m-d') == app.user.birthday |date('m-d') %}
+
+    <a href="{{path('fos_user_profile_show')}}"><img src="{{asset('images/eclats.gif')}}"  width =200 alt="cliquer ici ! " id="eclats"></a>
+
+    {% else %}
+        <a href="{{path('fos_user_profile_show')}}"><img src="{{asset('images/bird.gif')}}"  width =90 alt="cliquer ici ! " id="bird"></a>
+
+    {% endif %}
+</center>
+</div>
+
+</div>
+{% endblock %}
+
+{% block footer %}
+
+    {{ parent() }}
+{% endblock %}
+
+{% block js %}
+{{ parent() }}
+    <script>
+        /*$(document).ready(function(){
+         //$-jquery reference
+         //basu syntax $(selector).action()
+         //selector to fetch element
+         //action to be performed on element
+         $(".panel-body").click(function(){
+         $(this).hide();
+         });
+         $(".panel-heading").click(function()
+         {
+         $('.panel-body').show();
+         });
+         });*/
+        $(document).ready(function(){
+
+            $("body").hover(function(){//.nom de classe , #id , sans rien c element
+                //$(".panel1").hide(1000);
+                $("#panel1").show(2000);
+                // $("#panel1").toggle(1000);
+            });
+
+        });
+
+    </script>
+<!--------------------------------------------------------------->
+
+
+{% endblock %}
+
+{% endblock %}

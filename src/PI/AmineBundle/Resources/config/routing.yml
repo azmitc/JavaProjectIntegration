@@ -1,0 +1,79 @@
+pi_amine_homepage:
+    path:     /a
+    defaults: { _controller: PIAmineBundle:Default:index }
+accueilORG:
+    path:     /user/accorg
+    defaults: { _controller: PIAmineBundle:Default:indexOrg }
+accueilRAND:
+    path:     /user/accrand
+    defaults: { _controller: PIAmineBundle:Default:indexRand }
+
+ajout:
+    path:     /user/ajoutR
+    defaults: { _controller: PIAmineBundle:Randonnee:AjoutRandonnee }
+supprimer:
+    path:     /user/supprimer/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:Supprimer }
+ajoutcr:
+    path:     /admin/ajoutcr
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:Ajoutcr }
+
+
+
+affichecr:
+    path:     /user/affichecr
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:affichercrandonnee }
+affiche:
+    path:     /user/affiche/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:afficherrandonnee }
+
+
+
+Raffiche:
+    path:     /user/Raffiche/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:Rafficherrandonnee }
+Raffichecr:
+    path:     /user/Raffichecr
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:Raffichercrandonnee }
+detailR:
+    path:     /user/detailR/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:detailRandonnee }
+modifier:
+    path:     /user/modifier/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:Update }
+RdetailR:
+    path:     /user/RdetailR/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:RdetailRandonnee }
+
+
+
+
+Aaffichecr:
+    path:     /admin/Aafficher
+    defaults: { _controller: PIAmineBundle:Randonnee:list }
+valider:
+    path:     /admin/valider/{id}
+    defaults: { _controller: PIAmineBundle:Randonnee:valider }
+
+
+
+Allrando:
+    path:     /user/Allrando/
+    defaults: { _controller: PIAmineBundle:Randonnee:Allrando }
+
+rechDQL:
+    path:     /user/rechDQL/
+    defaults: { _controller: PIAmineBundle:Randonnee:rechDQL }
+
+
+Aaficheec:
+    path:     /admin/Aaffichec/
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:Aaffichercrandonnee }
+
+supp:
+    path:     /admin/supp/{id}
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:Supp }
+
+modi:
+    path:     /admin/modi/{id}
+    defaults: { _controller: PIAmineBundle:CategorieRandonnee:Update }

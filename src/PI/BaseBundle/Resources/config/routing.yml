@@ -1,0 +1,3 @@
+pi_base_homepage:
+    path:     /
+    defaults: { _controller: PIBaseBundle:Default:index }

@@ -1,0 +1,4 @@
+services:
+#    pi_gestion_admin.example:
+#        class: PI\GestionAdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
